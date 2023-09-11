@@ -139,6 +139,13 @@ body {
 	padding: 20px;
 }
 
+#about-me p {
+	color: #494d53;
+	text-align: center;
+	font-family: arial ,sans-serif;
+	padding: 20px;
+}
+
 #pesan {
 	color: #AAB2BF;
 	font-family: arial, sans-serif;
@@ -223,7 +230,7 @@ body {
 	transition: 1s;
 }
 
-/*Responsive*/
+/*Responsive 780px*/
 @media screen and (max-width: 780px){
 	.container {
 		width: 460px;
