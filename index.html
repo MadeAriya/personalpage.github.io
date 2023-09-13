@@ -1,101 +1,121 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width-device, initial-scale=1.0">
 	<title> Personal page </title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="shorcut icon" href="img/profile1.png">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
+
 <body>
 
-<div class="container">
+	<div class="container">
 
-	<!-- Bagian logo -->
-	<div class="logo">
-		<img src="img/logo.png" alt="">
+		<!-- Bagian logo -->
+		<div class="logo">
+			<img src="img/logo.png" alt="">
+		</div>
+		<!-- Akhir logo -->
+
+		<!-- Header -->
+		<header class="judul">
+			<h1 class="atas" id="name"></h1>
+			<p id="note">Sedang mendalami front end web developer</p>
+		</header>
+		<!-- Akhir header -->
+
+		<!-- Awal tombol -->
+		<div id="tombol">
+			<a href="#about-me">About Me</a>
+		</div>
+
+		<div id="tombol2">
+			<a href="#project">My Project</a>
+		</div>
+		<!-- Akhir tombol -->
+
+		<!-- Media sosial -->
+		<div class="box-link" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+		</div>
 	</div>
-	<!-- Akhir logo -->
-
-	<!-- Header -->
-	<header class="judul">
-		<h1 class="atas">Hi! i'm  Made Ariya</h1>
-		<p id="note">Sedang mendalami front end web developer</p>
-	</header>
-	<!-- Akhir header -->
-
-	<!-- Awal tombol -->
-	<div id="tombol">
-		<a href="#about-me" >About Me</a>
-	</div>
-
-	<div id="tombol2">
-		<a href="#project" >My Project</a>
-	</div>
-	<!-- Akhir tombol -->
-
-	<!-- Media sosial -->
-	<div class="box-link" data-aos="fade-down"data-aos-easing="linear"data-aos-duration="1500">
-	</div>
-</div>
 
 	<div id="about-me">
 		<h1>About me</h1>
-		<p>Nama saya I Made Ariya Putra saya lahir di Denpasar 21 Februari 2008, saya bersekolah di SMK Negeri 1 Denpasar dengan jurusan RPL alasan saya mengambil jurusan ini karena ingin belajar coding.</p>
+		<p>Nama saya I Made Ariya Putra saya lahir di Denpasar 21 Februari 2008, saya bersekolah di SMK Negeri 1
+			Denpasar dengan jurusan RPL alasan saya mengambil jurusan ini karena ingin belajar coding.</p>
 	</div>
 
-		<div class="skill" data-aos="fade-right">
-			<div id="icon1">
-				<i class="fab fa-css3-alt"></i>
-			</div>
-
-			<div class="icon2">
-				<i class="fab fa-html5"></i>
-			</div>
-
-			<p id="pesan">Html & Css , saya sedang mempelajari dan membuat website menggunakan html & css</p>
-		</div>
-		
-		<br>
-		<br>
-		<br>
-		<br>
-
-		<div class="sosmed"  data-aos="fade-left">
-			<ul>
-				<li><a href="https://twitter.com/mdeariyaa?s=09"><i class="fab fa-twitter"></i></a></li>
-				<li><a href="https://instagram.com/mdeariya_"><i class="fab fa-instagram"></i></a></li>
-			</ul>
-			<div id="notes">
-				<p>Berikut diatas merupakan media sosial yang saya pakai</p>
-			</div>
+	<div class="skill" data-aos="fade-right">
+		<div id="icon1">
+			<i class="fab fa-css3-alt"></i>
 		</div>
 
-		<div id="project">
-			<h1>My Project</h1>
-			<img src="img/abc.jpg" alt="" data-aos="zoom-out-down">
+		<div class="icon2">
+			<i class="fab fa-html5"></i>
 		</div>
 
-<br><br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+		<p id="pesan">Html & Css , saya sedang mempelajari dan membuat website menggunakan html & css</p>
+	</div>
 
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<div class="sosmed" data-aos="fade-left">
+		<ul>
+			<li><a href="https://twitter.com/mdeariyaa?s=09"><i class="fab fa-twitter"></i></a></li>
+			<li><a href="https://instagram.com/mdeariya_"><i class="fab fa-instagram"></i></a></li>
+			<li><a href="mailto:madeariya28@gmail.com"><i class="fa fa-envelope"></i></a></li>
+		</ul>
+		<div id="notes">
+			<p>Bisa kontak saya dengan sosial media diatas</p>
+		</div>
+	</div>
+
+	<div id="project">
+		<h1>My Project</h1>
+		<img src="img/abc.jpg" alt="" data-aos="zoom-out-down">
+	</div>
+
+	<br><br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<script>
+		// Efek Mengetik
+		var i = 0,
+			text;
+		text = "Hi! i'm Made Ariya";
+
+		function ketik() {
+			if (i < text.length) {
+				document.getElementById("name").innerHTML += text.charAt(i);
+				i++;
+				setTimeout(ketik, 120);
+			}
+		}
+		ketik();
+	</script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 
 </body>
+
 </html>
 
 <!-- Notes : <link rel="preconnect" href="https://fonts.googleapis.com">
