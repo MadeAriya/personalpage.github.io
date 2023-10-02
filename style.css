@@ -115,6 +115,53 @@ body {
 	color: white;
 }
 
+#tombol3 a {
+	text-decoration: none;
+	border: 1px solid #0DA8FB;
+	text-align: center;
+	color: #0DA8FB;
+	font-family: arial, sans-serif;
+	border-radius: 4px;
+	padding: 12px;
+}
+
+#tombol3 {
+	padding: 20px;
+	text-align: left;
+	margin-top: -10px;
+	scroll-behavior: smooth;
+}
+
+#tombol3 a:hover {
+	background-color: #0DA8FB;
+	transition: 1s;
+	color: white;
+}
+
+#tombol4 a {
+	text-decoration: none;
+	border: 1px solid #0DA8FB;
+	text-align: center;
+	color: #0DA8FB;
+	font-family: arial, sans-serif;
+	border-radius: 4px;
+	padding: 12px;
+}
+
+#tombol4 {
+	padding: 20px;
+	text-align: left;
+	margin-top: -60px;
+	margin-left: 100px;
+	scroll-behavior: smooth;
+}
+
+#tombol4 a:hover {
+	background-color: #0DA8FB;
+	transition: 1s;
+	color: white;
+}
+
 .box-link {
 	margin-top: -424px;
 	float: right;
@@ -354,4 +401,31 @@ body {
 		margin-left: 35px;
 	}
 
+	.navbar-icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: gainsboro;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		height: 50px;
+		z-index: 2;
+	}
+
+	#tombol3 {
+		margin-top: 1px;
+	}
+
+	#tombol3 a{
+		border: none;
+	}
+
+	#tombol4 {
+		margin-top: 1px;
+	}
+
+	#tombol4 a{
+		border: none;
+	}
 }
